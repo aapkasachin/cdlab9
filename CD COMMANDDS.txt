@@ -1,0 +1,56 @@
+CD COMMANDDS
+
+1,2,3,4 (input file -6,7,3)
+
+gedit 1.l
+lex 1.l
+gcc lex.yy.c -ll
+./a.out
+
+1b
+
+gedit 1b.l
+gedit 1b.y
+lex 1b.l
+yacc -d 1b.y
+gcc lex.yy.c y.tab.c -ll
+./a.out
+........................
+
+8 command
+lex 8.l
+yacc -d 8.y
+gcc lex.yy.c y.tab.c -o assembly -lfl
+echo '#int main() { int a=5; int b=10; a=a+b; printf("Sum %d\n",a);} '| ./assembly
+
+INPUT N OUTPUT 
+
+1 a: husdgyug gdfyg gdsyug
+OUPUT : NO OF WORDS :
+NO OF LINES:
+
+1b:aabbbc - valid 
+
+2a : 2/7
+2b: 2+3
+
+3a : no of comment lines :4
+3b: for(i=0;i<4;i++)
+
+4a: no of identifiers :6
+4b : if(abc)
+
+5 int a,b,c;
+
+6 a=b+c;
+
+7 parsing complete
+
+8 auto output
+
+
+
+
+
+
+
